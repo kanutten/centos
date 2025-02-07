@@ -9,11 +9,12 @@ set -ouex pipefail
 #dnf config-manager 
 #dnf config-manager --set-disabled docker-ce-stable
 #dnf -y --enablerepo docker-ce-stable install docker-ce \
-dnf5 -y copr enable ublue-os/staging
-dnf5 -y install flameshot
 dnf -y install fuse \
-fuse-libs
-dnf5 -y copr disable ublue-os/staging
+fuse-libs \
+flameshot \
+nextcloud-client-nautilus \ 
+nextcloud-client
+
 
 
 
