@@ -8,7 +8,7 @@ set -ouex pipefail
 
 dnf -y install fuse \
 fuse-libs \
-extcloud-client-nautilus
+nextcloud-client-nautilus
 
  #nextcloud-client
  #"nextcloud-client-nautilus" \
