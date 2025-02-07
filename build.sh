@@ -6,10 +6,8 @@ set -ouex pipefail
 
 #set -xeuo pipefail
 
-dnf -y install \
-
- flameshot \
- nextcloud-client
+dnf -y install flameshot
+ #nextcloud-client
  #"nextcloud-client-nautilus" \
  #"fuse" \
  #"fuse-libs"
