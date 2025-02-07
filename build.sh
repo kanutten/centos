@@ -7,12 +7,12 @@ set -ouex pipefail
 
 dnf -y install \
 
- flameshot \
- nextcloud-client \
- nextcloud-client-nautilus \
- fuse \
- fuse-libs \
- sg3_utils
+ "flameshot" \
+ "nextcloud-client" \
+ "nextcloud-client-nautilus" \
+ "fuse" \
+ "fuse-libs"
+ #sg3_utils
 #dnf config-manager --add-repo "https://download.docker.com/linux/centos/docker-ce.repo"
 #dnf config-manager --set-disabled docker-ce-stable
 #dnf -y --enablerepo docker-ce-stable install docker-ce \
