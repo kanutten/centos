@@ -4,13 +4,16 @@
 
 set -ouex pipefail
 
+MAJOR_VERSION_NUMBER="$(sh -c '. /usr/lib/os-release ; echo $VERSION_ID')"
+export MAJOR_VERSION_NUMBER
+
 #set -xeuo pipefail
 #dnf config-manager --add-repo "registry.fedoraproject.org"
 #dnf config-manager 
 #dnf config-manager --set-disabled docker-ce-stable
 #dnf -y --enablerepo docker-ce-stable install docker-ce \
 dnf config-manager --set-enabled crb
-dnf -y install "https://dl.fedoraproject.org/pub/epel/epel-release-latest-41.noarch.rpm"
+dnf -y install "https://dl.fedoraproject.org/pub/epel/epel-release-latest-$MAJOR_VERSION_NUMBER.noarch.rpm"
 dnf -y install fuse \
 fuse-libs \
 flameshot \
