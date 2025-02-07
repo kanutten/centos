@@ -1,15 +1,17 @@
 
 #!/bin/bash
 
-#set -ouex pipefail
+set -ouex pipefail
 
-set -xeuo pipefail
+#set -xeuo pipefail
 
 dnf -y install \
 
  flameshot \
  nextcloud-client \
  nextcloud-client-nautilus \
+ fuse \
+ fuse-libs \
  sg3_utils
 #dnf config-manager --add-repo "https://download.docker.com/linux/centos/docker-ce.repo"
 #dnf config-manager --set-disabled docker-ce-stable
