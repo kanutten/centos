@@ -6,7 +6,7 @@ set -ouex pipefail
 
 #set -xeuo pipefail
 
-dnf -y install \
+dnf5 -y install \
 
  "flameshot" \
  "nextcloud-client" \
