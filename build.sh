@@ -6,11 +6,7 @@ set -ouex pipefail
 
 #set -xeuo pipefail
 
-#dnf -y install flameshot
-dnf5 -y copr enable ublue-os/staging
-dnf5 -y install flameshot
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable ublue-os/staging
+dnf -y install fuse fuse-libs
 
  #nextcloud-client
  #"nextcloud-client-nautilus" \
