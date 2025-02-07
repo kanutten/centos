@@ -5,9 +5,17 @@
 set -ouex pipefail
 
 #set -xeuo pipefail
-
+dnf config-manager --add-repo "registry.fedoraproject.org"
+#dnf config-manager --set-disabled docker-ce-stable
+#dnf -y --enablerepo docker-ce-stable install docker-ce \
 dnf -y install fuse \
-fuse-libs
+fuse-libs \
+flameshot
+
+
+
+
+
 #nextcloud-client-nautilus
 
  #nextcloud-client
