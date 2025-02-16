@@ -14,6 +14,7 @@ export MAJOR_VERSION_NUMBER
 #dnf config-manager --set-enabled crb
 dnf -y install "https://dl.fedoraproject.org/pub/epel/epel-release-latest-$MAJOR_VERSION_NUMBER.noarch.rpm"
 dnf -y install fuse \
+flameshot \
 fuse-libs
 #flameshot \
 #nextcloud-client-nautilus \ 
