@@ -13,6 +13,7 @@ export MAJOR_VERSION_NUMBER
 #dnf -y --enablerepo docker-ce-stable install docker-ce \
 #dnf config-manager --set-enabled crb
 dnf -y install "https://dl.fedoraproject.org/pub/epel/epel-release-latest-$MAJOR_VERSION_NUMBER.noarch.rpm"
+dnf -y install "https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm"
 dnf -y install fuse \
 flameshot \
 fuse-libs
