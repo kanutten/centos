@@ -22,7 +22,7 @@ export MAJOR_VERSION_NUMBER
 #flameshot \
 #nextcloud-client-nautilus \ 
 #nextcloud-client
-#balhblah
+
 
 
 
