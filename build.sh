@@ -7,7 +7,7 @@ set -ouex pipefail
 MAJOR_VERSION_NUMBER="$(sh -c '. /usr/lib/os-release ; echo $VERSION_ID')"
 export MAJOR_VERSION_NUMBER
 dnf -y install fuse
-dnf -y install "Virtualization Hypervisor" 
+#dnf -y install "Virtualization Hypervisor" 
  #dnf -y group install "Virtualization Tools"
 
 # ZFS Kernel Module
