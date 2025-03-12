@@ -16,9 +16,9 @@ export MAJOR_VERSION_NUMBER
 #dnf -y install --nogpgcheck "https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm"
 #dnf -y install "https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-9.noarch.rpm"
 #dnf -y install "https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-9.noarch.rpm"
-#dnf -y install fuse \
+dnf -y install fuse \
 #flameshot \
-#fuse-libs
+fuse-libs
 #flameshot \
 #nextcloud-client-nautilus \ 
 #nextcloud-client
