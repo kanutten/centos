@@ -88,6 +88,6 @@ This provides users a method of verifying the image.
 ### Rebase
 
     ```bash
-    bootc switch ghcr.io/ublue-os/bluefin:lts --enforce-container-sigpolicy
+    bootc switch ghcr.io/ublue-os/bluefin-dx:lts --enforce-container-sigpolicy
     ```
 
