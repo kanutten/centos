@@ -83,7 +83,7 @@ This provides users a method of verifying the image.
 ### Rebase
 
    ```bash
-   bootc switch ghcr.io/kanutten/centos:latest --enforce-container-sigpolicy
+   sudo bootc switch --enforce-container-sigpolicy ghcr.io/kanutten/centos:latest
    ```
 
 ### Examples
