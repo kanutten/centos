@@ -80,14 +80,14 @@ This provides users a method of verifying the image.
 
 4. Commit the `cosign.pub` file to the root of your git repository.
 
+### Rebase
+
+   ```bash
+   bootc switch ghcr.io/kanutten/centos:latest --enforce-container-sigpolicy
+   ```
+
 ### Examples
 - [m2os](https://github.com/m2giles/m2os)
 - [bos](https://github.com/bsherman/bos)
 - [homer](https://github.com/bketelsen/homer/)
-
-### Rebase
-
-    ```bash
-    bootc switch ghcr.io/ublue-os/bluefin-dx:lts --enforce-container-sigpolicy
-    ```
 
