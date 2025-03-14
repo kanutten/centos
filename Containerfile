@@ -1,7 +1,7 @@
 
 ### 2. SOURCE IMAGE
 ## this is a standard Containerfile FROM using the build ARGs above to select the right upstream image
-FROM ghcr.io/ublue-os/bluefin:lts
+FROM ghcr.io/ublue-os/bluefin:lts-dx
 
 
 ### 3. MODIFICATIONS
